@@ -9,23 +9,23 @@
 }
 
 
-h1{
+.home h1{
   font-weight: 700;
   font-size: 30px;
   text-transform: uppercase;
   letter-spacing: -2px;
 }
-h2{
+.home h2{
   font-weight: 700;
   font-size: 20px;
   text-transform: uppercase;
   letter-spacing: -2px;
 }
-p{
-  font-size: 12px;
+.home p{
+  font-size: 16px;
   font-weight: lighter;
   color: white;
-  opacity: 0.5;
+  opacity: 0.6;
   
 }
 .index{

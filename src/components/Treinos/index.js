@@ -1,7 +1,7 @@
 import './module.Treinos.css'
 function Treinos(){
   return(
-    <>
+    <section>
      <h1 className='center'>
     <strong> Find your</strong> <br/> workout class
 
@@ -13,10 +13,10 @@ function Treinos(){
             alt=""/>
             <div className="info">
 
-                <h2>Boxer workout</h2>
-                <p>50 rep</p>
+                <h2>Rotina de condicionamento</h2>
+                <p>30 min</p>
             </div>
-    <a href="treino.html">{'>'}</a>
+    <a href="/exercicios">{'>'}</a>
     </div>
 
     <div className="treino">
@@ -65,7 +65,7 @@ function Treinos(){
 
 
 </div>
-    </>
+    </section>
   )
 }
 export default Treinos

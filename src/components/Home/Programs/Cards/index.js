@@ -16,8 +16,8 @@ function Cards() {
 
       <Card
         img="https://i.pinimg.com/564x/35/2e/9a/352e9ab61db348264161406eccfe08d3.jpg"
-        titulo="Enterrada"
-        descricao="Melhore sua enterrada"
+        titulo="Condicionamento"
+        descricao="Melhore seu condicionamento"
       />
 
       <Card
