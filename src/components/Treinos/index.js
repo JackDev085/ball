@@ -1,71 +1,65 @@
 import './module.Treinos.css'
-function Treinos(){
-  return(
-    <section>
-     <h1 className='center'>
-    <strong> Find your</strong> <br/> workout class
 
-</h1> 
-<div className="treinos">
+import React from 'react';
+import { useParams } from 'react-router-dom';
 
-    <div className="treino">
-        <img src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt=""/>
-            <div className="info">
 
-                <h2>Rotina de condicionamento</h2>
-                <p>30 min</p>
+
+function Treinos() {
+    const teste = [
+        {
+            "img": "https://cdn.vanguardngr.com/wp-content/uploads/2023/10/Giannis-Antetokoumpo-1536x864.webp",
+            "titulo": "Rotina de condicionamento",
+            "endpoint":'rotinaCondicionamento',
+            "descricao": "30 min",
+            "tipo": "condicionamento",
+        },
+        {
+            "img": "https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2023/12/curry_warriors-e1702929101942.jpeg?w=829&h=468&crop=1",
+            "titulo": "Rotina de arremesso",
+            "endpoint":'rotinaArremesso',
+            "descricao": "15 min",
+            "tipo": "arremesso",
+        },
+        {
+            "img": "https://www.infolivros.org/wp-content/uploads/2021/08/livros-basquetebol.webp?ezimgfmt=ngcb2/notWebP",
+            "titulo": "Como pensar em quadra?",
+            "endpoint":'rotinaDrible',
+            "descricao": "-",
+            "tipo": "estudo",
+        },
+        {
+            "img": "https://jumperbrasil.com.br/wp-content/uploads/2024/01/Kyrie-Irving_Easy-Resize.com_.jpg",
+            "titulo": "Rotina de drible",
+            "endpoint":'livro',
+            "descricao": "20 min",
+            "tipo": "drible",
+        }
+    ]
+    const { tipoTreino } = useParams();
+    return (
+        <section class="treinos-class">
+            <h1>/<strong className='op6'>/</strong><strong className='op3'>/</strong> {tipoTreino}</h1>
+            <p>Lista de treinos para {tipoTreino}</p>
+
+            <div className="treinos">
+
+                {teste.filter((treino) => tipoTreino === treino.tipo) //filtra os treinos com base no tipo
+                .map((treino,index) => (
+                        <div className="treino" key={index}>
+                            <img src={treino.img}
+                                alt={treino.titulo} />
+                            <div className="info">
+                                <h2>{treino.titulo}</h2>
+                                <p>{treino.descricao}</p>
+                            </div>
+                            <a href={`/exercicios/${treino.endpoint}`}>{'>'}</a>
+                        </div>
+
+                ))}
+
             </div>
-    <a href="/exercicios">{'>'}</a>
-    </div>
-
-    <div className="treino">
-        <img src="https://images.unsplash.com/photo-1483721310020-03333e577078?q=80&w=1856&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt=""/>
-            <div className="info">
-
-                <h2>Boxer workout</h2>
-                <p>50 rep</p>
-            </div>
-    <a href="treino.html">{'>'}</a>
-    </div>
-
-    <div className="treino">
-        <img src="https://www.sportsmomsurvivalguide.com/wp-content/uploads/2020/02/impact-basketball-drill.jpg"
-            alt=""/>
-            <div className="info">
-
-                <h2>Boxer workout</h2>
-                <p>50 rep</p>
-            </div>
-    <a href="treino.html">{'>'}</a>
-    </div>
-
-    <div className="treino">
-        <img src="https://images.unsplash.com/photo-1521804906057-1df8fdb718b7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt=""/>
-            <div className="info">
-
-                <h2>Boxer workout</h2>
-                <p>50 rep</p>
-            </div>
-    <a href="treino.html">{'>'}</a>
-    </div>
-
-    <div className="treino">
-        <img src="https://plus.unsplash.com/premium_photo-1664478256604-52548c4af05a?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt=""/>
-            <div className="info">
-
-                <h2>Boxer workout</h2>
-                <p>50 rep</p>
-            </div>
-    <a href="treino.html">{'>'}</a>
-    </div>
-
-
-</div>
-    </section>
-  )
+        </section>
+    )
 }
 export default Treinos
