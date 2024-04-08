@@ -31,3 +31,12 @@ h1{
   text-transform: uppercase;
   letter-spacing: -1px;
 } */
+
+#teste{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  background-color: brown;
+}
