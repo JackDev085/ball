@@ -58,6 +58,9 @@
   .cards{
     flex: 1 0 12.5rem;
   }
+  .card{
+    width:12rem;
+  }
 }
 .card img{
   width: 100%;
