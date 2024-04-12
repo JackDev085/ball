@@ -1,83 +1,80 @@
-
 strong {
-    opacity: 0.7;
+  opacity: 0.7;
 }
-.treinos-class{
-    max-width: 800px;
-    display: flex;
-    flex-direction: column;
+.treinos-class {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  height: 100vh;
+  margin: 5rem auto 0 auto;
+}
+
+.treinos-class p {
+  opacity: 0.6;
+}
+.treinos-class p:nth-last-child(2) {
+  margin-bottom: 1.85rem;
+}
+.treinos p {
+  opacity: 0.5;
+  font-size: 1rem;
+}
+.treinos h2 {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.treinos {
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 20px;
+  overflow-y: hidden;
+}
+.treino {
+  display: grid;
+  grid-template-columns: 0.8fr 1fr 0.2fr;
+  width: 100%;
+  background-color: #1a1c1d;
+  border-radius: 10px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.treino img {
+  width: 60%;
+  border-radius: 8px;
+}
+
+.treino a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  background-color: #bcf246;
+  border-radius: 20px;
+  color: #151718;
+}
+@media (max-width: 600px) {
+  .treinos {
     width: 80vw;
-    height: 100vh;
-    margin: 5rem auto 0 auto;
-}
-
-.treinos-class p{
-    opacity: 0.6;
-}
-.treinos-class p:nth-last-child(2){
-    margin-bottom:1.85rem ;
-}
-.treinos p{
-    opacity: 0.5;
-    font-size: 1rem;
-}
-.treinos h2{
-    font-size:1.4rem;
-    font-weight: 500;
-}
-.treinos{
-
+  }
+  .treino img {
     width: 80%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    border-radius: 20px;
-    overflow-y:hidden;
-}
-.treino{
-    display: grid;
-    grid-template-columns:0.8fr 1fr 0.2fr;
-    width: 100%;
-    background-color: #1A1C1D;
-    border-radius: 10px;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-}
-
-.treino img{
-    width: 60%;
     border-radius: 8px;
-}
-
-.treino a{
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size:1.6rem;
-    background-color: #BCF246;
-    border-radius: 20px;
-    color: #151718;
-
-}
-@media (max-width: 600px){
-    .treinos{
-        width: 80vw;
-    }
-    .treino img{
-      width: 80%;
-      border-radius: 8px;
   }
 
-  .treinos p{
+  .treinos p {
     opacity: 0.5;
     font-size: 0.8rem;
-}
-.treinos h2{
-    font-size:1rem;
+  }
+  .treinos h2 {
+    font-size: 1rem;
     font-weight: 500;
-}
+  }
 }

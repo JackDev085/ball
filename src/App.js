@@ -4,8 +4,7 @@ import Home from "./components/Home/index"
 import Treinos from "./components/Treinos/index"
 import Exercicios from "./components/Exercicios/index"
 import NotFound from './components/NotFound';
-import Teste from './components/Teste';
-import Main from './components/Exercicios/Main';
+import Main from './components/Main';
 function App() {
   return (
     <Router>
