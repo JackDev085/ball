@@ -3,11 +3,12 @@ strong {
     opacity: 0.7;
 }
 .treinos-class{
+    max-width: 800px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin-top:85px;
-    text-align: left;
+    width: 80vw;
+    height: 100vh;
+    margin: 5rem auto 0 auto;
 }
 
 .treinos-class p{
@@ -18,15 +19,15 @@ strong {
 }
 .treinos p{
     opacity: 0.5;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 .treinos h2{
-    font-size: 14px;
+    font-size:1.4rem;
     font-weight: 500;
 }
 .treinos{
 
-    width: 80vw;
+    width: 80%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -37,7 +38,7 @@ strong {
 .treino{
     display: grid;
     grid-template-columns:0.8fr 1fr 0.2fr;
-    width: 80%;
+    width: 100%;
     background-color: #1A1C1D;
     border-radius: 10px;
     margin: 0 auto;
@@ -70,4 +71,13 @@ strong {
       width: 80%;
       border-radius: 8px;
   }
+
+  .treinos p{
+    opacity: 0.5;
+    font-size: 0.8rem;
+}
+.treinos h2{
+    font-size:1rem;
+    font-weight: 500;
+}
 }

@@ -40,7 +40,7 @@
 .index{
   width: 60%;
   height: 80%;
-  margin: 0 auto;
+  margin: 5rem auto 0 auto;
 }
 .cards{
   display: grid;

@@ -2,9 +2,9 @@ import "./module.Main.css"
 import { Link } from "react-router-dom"
 function Main() {
   return (
-    <>
+    <div className="init">
       <div class="img">
-        <img src="imgs/logo.png" alt="" />
+        <img src="imgs/logo1.png" alt="" />
       </div>
       <div class="main">
         <h1><em>"É preciso se atrever a ser grande", </em>Kobe Bryant.</h1>
@@ -12,7 +12,7 @@ function Main() {
         <Link to="/main">Let's Go Baby🏀</Link>
       
       </div>
-      </>
+      </div>
   )
 }
 export default Main
