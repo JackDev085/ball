@@ -29,10 +29,10 @@
   letter-spacing: -1px;
 }
 .home p{
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: lighter;
   color: white;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .index p:nth-last-child(2){
   font-size: 1rem;

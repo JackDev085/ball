@@ -13,10 +13,10 @@ function Exercicios() {
 
     {
       nome: "rotinaCondicionamento", videos: [
-        { id: 1, nomeExercicio: "Flexao", repeticoes: '1X50rep', link: "GCujckP_bog" },
-        { id: 2, nomeExercicio: "Agachamento", repeticoes: '1X50rep', link: "G04b-_GZnII" },
-        { id: 3, nomeExercicio: "Abdominal", repeticoes: '1X50rep', link: "o-1jAL_y1Ek" },
-        { id: 4, nomeExercicio: "Prancha", repeticoes: '2x60seg', link: "IAU4r9rG28o" },
+        { id: 1, nomeExercicio: "Flexao", repeticoes: '1X50rep', link: "kV4gIXCFgL4" },
+        { id: 2, nomeExercicio: "Agachamento", repeticoes: '1X50rep', link: "GXe89NaE9Ss" },
+        { id: 3, nomeExercicio: "Abdominal", repeticoes: '1X50rep', link: "-xZ8j6UzMo8" },
+        { id: 4, nomeExercicio: "Prancha", repeticoes: '2x60seg', link: "A0mh0MMuzV0" },
       ]
     },
     {
