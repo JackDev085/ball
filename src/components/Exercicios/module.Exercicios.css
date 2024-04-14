@@ -10,7 +10,7 @@
 .treino-exercicios{
   display: flex;
   width: 60%;
-  height: 60%;
+  height: 50%;
 }
 .video{
   width: 100%;
@@ -19,22 +19,29 @@
 .videoif{
   width: 100%;
   height: 100%;
+
 }
 .videos{
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100%;
   align-items: center;
-  justify-content: center;
   text-align: left;
-  overflow:auto
+  overflow-y: scroll;
+  height: 100%;
+
 }
 .videos h2{
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   text-align: right;
   margin: 1rem;
-
+  border: 1px solid white;
+  background-color: white;
+  color: black;
+  padding: 0.6rem;
+}
+.videos h2:hover{
+  background-color: rgb(180, 180, 180);
 }
 .exercicios{
   display: flex;
@@ -47,10 +54,15 @@
   display: grid;
   grid-template-columns: 1.2fr 1.8fr 1fr;
   width: 100%;
-  min-height: 5rem;
+  min-height: 2rem;
   border-radius: 20px;
+  background-color: #e6daf2;
   border: 1px solid rgba(219, 213, 213, 0.4);
   padding: 10px;
+  color: black;
+}
+.exercicio:hover{
+  background-color: #a8aab5;
 }
 .tempo{
   display: flex;
@@ -82,11 +94,19 @@
   font-size: 30px;
   cursor: pointer;
 }
+.exercicio span:nth-child(3):hover{
+  background-color: #8b8b90;
+}
 @media (max-width:900px){
   
+  .exercicios-main{
+    min-height: 100vh;
+    height: auto;
+    align-items: normal;
+  justify-content: normal;
+  }
   .treino{
     width: 100%;
-    height: 100%;
   }
   .treino-exercicios{
     width: 100%;
@@ -94,6 +114,14 @@
     flex-direction: column;
   }
   .video{
-    height: 50%;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .videoif{
+    width: 100%;
+    min-height: 300px;
+  }
+  .videos{
+    overflow-y:visible;
   }
 }
