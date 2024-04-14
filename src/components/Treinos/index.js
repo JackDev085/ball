@@ -10,14 +10,14 @@ function Treinos() {
         {
             "img": "/imgs/giannis.webp",
             "titulo": "Rotina de condicionamento",
-            "endpoint":'rotinaCondicionamento',
+            "endpoint": 'rotinaCondicionamento',
             "descricao": "30 min",
             "tipo": "condicionamento",
         },
         {
             "img": "/imgs/curry-arremesso.webp",
             "titulo": "Treino arremesso - média distância",
-            "endpoint":'mediaDistancia',
+            "endpoint": 'mediaDistancia',
             "descricao": "15 min",
             "tipo": "arremesso",
         },
@@ -38,29 +38,31 @@ function Treinos() {
     ]
     const { tipoTreino } = useParams();
     return (
+
         <section class="treinos-class">
             <h1>/<strong className='op6'>/</strong><strong className='op3'>/</strong> {tipoTreino}</h1>
             <p>Lista de treinos para {tipoTreino}</p>
 
             <div className="treinos">
-  {
-    teste.filter((treino) => tipoTreino === treino.tipo).length > 0 // Check if there are any trainings of the specified type
-    ? teste.filter((treino) => tipoTreino === treino.tipo) // If there are, map them
-        .map((treino,index) => (
-            <div className="treino" key={index}>
-                <img src={treino.img}
-                    alt={treino.titulo} />
-                <div className="info">
-                    <h2>{treino.titulo}</h2>
-                    <p>{treino.descricao}</p>
-                </div>
-                <a href={`/exercicios/${treino.endpoint}`}>{'>'}</a>
+                {
+                    teste.filter((treino) => tipoTreino === treino.tipo).length > 0 // Check if there are any trainings of the specified type
+                        ? teste.filter((treino) => tipoTreino === treino.tipo) // If there are, map them
+                            .map((treino, index) => (
+                                <div className="treino" key={index}>
+                                    <img src={treino.img}
+                                        alt={treino.titulo} />
+                                    <div className="info">
+                                        <h2>{treino.titulo}</h2>
+                                        <p>{treino.descricao}</p>
+                                    </div>
+                                    <a href={`/exercicios/${treino.endpoint}`}>{'>'}</a>
+                                </div>
+                            ))
+                        : <h3>Não há treinos aqui por enquanto</h3> // If there aren't, display the message
+                }
             </div>
-        ))
-    : <h3>Não há treinos aqui por enquanto</h3> // If there aren't, display the message
-  }
-</div>
         </section>
+
     )
 }
 export default Treinos

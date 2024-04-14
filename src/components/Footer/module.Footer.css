@@ -1,0 +1,17 @@
+.footer{
+  margin-bottom: 10px;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+}
+.footer a{
+  font-size: 1rem;
+  color: rgb(213, 213, 213);
+}
+.footer a:hover{
+  color: white;
+}
+.exercicios-main .footer{
+  background-color: black;
+}

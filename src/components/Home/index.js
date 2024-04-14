@@ -1,5 +1,6 @@
 import "./module.home.css"
 import Programas from "./Programs/index."
+import Footer from "../Footer"
 function Home(){
 
  return(
@@ -7,6 +8,7 @@ function Home(){
     
     <Programas>
     </Programas>
+    <Footer></Footer>
   </div>
  )
 

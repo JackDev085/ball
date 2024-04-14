@@ -1,5 +1,6 @@
 import "./module.Main.css"
 import { Link } from "react-router-dom"
+import Footer from "../Footer"
 function Main() {
   return (
     <div className="init">
@@ -12,6 +13,7 @@ function Main() {
         <Link to="/main">Let's Go Baby🏀</Link>
       
       </div>
+      <Footer/>
       </div>
   )
 }

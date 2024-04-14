@@ -46,8 +46,8 @@ function Exercicios() {
   const handleExercicioClick = (link) => {
     setVideoLink(link);
   };
-
   return (
+
     <div className="exercicios-main">
       <div className="treino-exercicios">
         <div className="video">
@@ -71,6 +71,8 @@ function Exercicios() {
         </div>
       </div>
     </div>
+
+
   );
 }
 
