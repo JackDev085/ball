@@ -11,6 +11,7 @@ strong {
   margin: 5rem auto 0 auto;
 }
 
+
 .treinos-class p {
   opacity: 0.6;
 }
@@ -31,15 +32,13 @@ strong {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  border-radius: 20px;
   overflow-y: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 .treino {
   display: grid;
   grid-template-columns: 0.8fr 1fr 0.2fr;
   width: 100%;
-  background-color: #1a1c1d;
-  border-radius: 10px;
   margin: 0 auto;
   align-items: center;
   justify-content: center;
@@ -57,17 +56,22 @@ strong {
   align-items: center;
   justify-content: center;
   font-size: 1.6rem;
-  background-color: #bcf246;
   border-radius: 20px;
-  color: #151718;
+  color: white;
 }
 @media (max-width: 600px) {
+  .treinos-class {
+    width: 100vw;
+  }
   .treinos {
-    width: 80vw;
+    width: 100%;
+    margin: 1.6rem auto 0 auto;
+  }
+  .treino{
+    grid-template-columns: 1.4fr 2fr 0.6fr;
   }
   .treino img {
     width: 80%;
-    border-radius: 8px;
   }
 
   .treinos p {
@@ -77,5 +81,15 @@ strong {
   .treinos h2 {
     font-size: 1rem;
     font-weight: 500;
+  }
+  .treinos-class h1{
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .treinos-class p:nth-last-child(2) {
+    opacity: 0.6;
+    width: 80%;
+    margin: 0 auto;
   }
 }

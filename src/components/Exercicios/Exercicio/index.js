@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function Exercicio({ tempo, nomeExercicio, repeticoes, link, onClick , nomeTreino}) {
+function Exercicio({ img_video, nomeExercicio, repeticoes, link, onClick , nomeTreino}) {
 
   return (
+    <>
         <div className="exercicio">
           <div className="tempo">
-          <p>{tempo}</p>
+          <img src={img_video} alt="Capa do vídeo" />
           </div>
 
           <div class="info-exercicio">
@@ -16,7 +17,7 @@ function Exercicio({ tempo, nomeExercicio, repeticoes, link, onClick , nomeTrein
             <span className='play' onClick={onClick}>▶</span>
             </div>
 
-        
+           </>
   );
 }
 export default Exercicio;

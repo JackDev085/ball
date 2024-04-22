@@ -11,14 +11,14 @@ function Treinos() {
             "img": "/imgs/giannis.webp",
             "titulo": "Rotina de condicionamento",
             "endpoint": 'rotinaCondicionamento',
-            "descricao": "30 min",
+            "descricao": "20 min",
             "tipo": "condicionamento",
         },
         {
             "img": "/imgs/curry-arremesso.webp",
-            "titulo": "Treino arremesso - média distância",
+            "titulo": "Média distância - 1",
             "endpoint": 'mediaDistancia',
-            "descricao": "15 min",
+            "descricao": "30 min",
             "tipo": "arremesso",
         },
         // {
@@ -55,7 +55,7 @@ function Treinos() {
                                         <h2>{treino.titulo}</h2>
                                         <p>{treino.descricao}</p>
                                     </div>
-                                    <a href={`/exercicios/${treino.endpoint}`}>{'>'}</a>
+                                    <a href={`/exercicios/${treino.endpoint}`}>▶</a>
                                 </div>
                             ))
                         : <h3>Não há treinos aqui por enquanto</h3> // If there aren't, display the message
