@@ -13,7 +13,7 @@ function Exercicios() {
   const videosPorTipoTreino = [
 
     {
-      nome: "rotina_de_ondicionamento", videos: [
+      nome: "rotina_de_condicionamento", videos: [
         { id: 1, nomeExercicio: "Flexao", repeticoes: '50 repetições', link: "kV4gIXCFgL4" },
         { id: 2, nomeExercicio: "Agachamento", repeticoes: '50 repetições', link: "GXe89NaE9Ss" },
         { id: 3, nomeExercicio: "Abdominal", repeticoes: '50 repetições', link: "-xZ8j6UzMo8" },

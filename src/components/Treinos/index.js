@@ -67,7 +67,7 @@ function Treinos() {
                                     {
                                         treino.tipo === "estudo"
                                             ? <a href={treino.downloadLink} target='_blank' download rel="noreferrer">📋</a>
-                                            : <a href={`/exercicios/${treino.endpoint}`}>{'>'}</a>
+                                            : <a href={`/exercicios/${treino.endpoint}`}>▶</a>
                                     }
                                 </div>
                             ))
